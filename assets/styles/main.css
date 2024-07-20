@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, rgb(203, 247, 225), mistyrose, mintcream);
+}
+
+.headerNavigation {
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    width: 3rem;
+    height: 3rem;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+button[type=button] {
+    border: none;
+    background-color: orangered;
+    width: 12rem;
+    height: 3rem;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.heroSection {
+    height: 85vh;
+    width: 100vw;
+    padding: 4rem;
+    /* background-color: blue; */
+    display: flex;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+h2#body {
+    font-size: 1.8rem;
+    margin-top: 100px;
+}
+
+.ptext {
+    font-size: 1.3rem;
+}
+
+.leftHeroSection {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.searchNewOrder {
+    height: 2.5rem;
+    width: 24rem;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.cutleryImage {
+    height: 100%;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+#orderSearch {
+    all: unset;
+    width: 18rem;
+}
+
+.searchImage {
+    display: flex;
+}
+
+.searchIcon {
+    height: 100%;
+    width: 4rem;
+    background-color: orangered;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightHeroSection {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carouselBox {
+    height: 50%;
+    width: 90%;
+    /* border: 1px solid black; */
+    background-size: cover;
+    background-position: 100% 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.popularDishes {
+    height: 30rem;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.popularDishesHeader {
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.popularDishesCards {
+    display: flex;
+    height: 80%;
+    max-width: 100%;
+    /* border: 1px solid rgb(210, 14, 14); */
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+#cards {
+    height: 20rem;
+    width: 15rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite {
+    width: 100%;
+    height: 2rem;
+    /* border: 1px solid orangered; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-radius: 50%; */
+}
+
+.favicon {
+    width: 2rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardImage {
+    height: 8rem;
+    width: 80%;
+    /* border: 1px solid black; */
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.cardDescription {
+    width: 100%;
+    height: 2rem;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cardRating {
+    width: 100%;
+    height: 2rem;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+}
+
+.richDescription {
+    width: 100%;
+    height: 2.3rem;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    margin-bottom: 10px;
+    color: grey;
+}
+#richDescription {
+    font-size: 0.8rem;
+}
+
+.priceTag {
+    width: 100%;
+    height: 2rem;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cardBtn {
+    height: 2rem;
+    width: 6rem;
+    border-radius: 5px;
+}
+
+.label {
+    /* border: 1px solid black; */
+}
+
+#popularDishes {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.navigationButton {
+    /* border: 1px solid black; */
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftNav {
+    width: 3rem;
+    height: 2.5rem;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.rightNav {
+    width: 3rem;
+    height: 2.5rem;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.aboutSection {
+    height: 30rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.leftSection {
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutImage {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.rightSection {
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.menuSection {
+    height: 25rem;
+    width: 100%;
+    background-color: rgb(250, 142, 142);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.menuHeader {
+    height: 15%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.menuNavigation {
+    height: 15%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.menuBody {
+    height: 70%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.achievement {
+    height: 10rem;
+    width: 100%;
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+.blogPosts {
+    height: 25rem;
+    width: 100%;
+    background-color: rgb(142, 200, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-bottom: 2px solid grey;
+}
+
+.blogHeader {
+    height: 20%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.blogCards {
+    height: 80%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.newsLetterSection {
+    height: 25rem;
+    width: 100%;
+    background-color: rgb(73, 177, 84);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.newsLetterText {
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.newsLetterSubscribe {
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.imageGallery {
+    height: 20rem;
+    width: 100%;
+    background-color: rgb(203, 197, 21);
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.imageBox {
+    height: 100%;
+    width: 16.7%;
+    border: 1px solid black;
+}
+
+.footer {
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(203, 21, 151);
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
