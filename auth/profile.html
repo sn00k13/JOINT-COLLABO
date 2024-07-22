@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/profile.css">
+</head>
+<body id="profileContainer">
+    
+    <!-- Page  Header Navigation here -->
+    <div class="headerNavigation">
+        <div class="hamburger" id="hamburger">
+            <span style="font-size: 1.5rem; color: orangered;">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <h2>iTaste Restaurant Locator</h2>
+        <button type="button">Make an Order</button>
+     </div>
+
+     <!-- Profile Information goes here -->
+      <div class="profileHeader">
+        <div class="profileNavigation">
+            <div>
+                Home
+                <span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+            </div>
+            <div>
+                My Account
+                <span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+            </div>
+            <div>
+                My profile
+            </div>
+        </div>
+        <div class="profileHeaderTitle">
+            <h1>Account Information</h1>
+        </div>
+      </div>
+      <div class="profileBody">
+        <div class="selectOptions">
+            <div class="profileOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <h4>My Profile</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Account Information</p>
+                    <p>Delivery Address</p>
+                </div>
+            </div>
+            <div class="ordersOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>My Orders</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Order History</p>
+                    <p>Pending Ratings</p>
+                </div>
+            </div>
+            <div class="walletOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>My Wallet</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Wallet</p>
+                </div>
+            </div>
+            <div class="deleteAccount">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>Delete Account</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Delete Account</p>
+                </div>
+            </div>
+        </div>
+        <div class="displaySelectedOption" id="myProfileDisplay">
+            <div class="displayHeader">
+                <h2>Account Information</h2>
+            </div>
+            <div class="displayBody">
+                <form action="" method="post" id="profileForm">
+                    <div class="formDivs">
+                        <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="formDivs">
+                        <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <div class="formDivs">
+                        <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                    </div>
+                    <div class="formDivs">
+                        <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                    </div>
+                    <div class="formDivs">
+                        <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                    </div>
+                    <div class="formDivs">
+                        <label for="confirmPassword">Email Address</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+
+</body>
+</html>
