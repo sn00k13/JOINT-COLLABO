@@ -62,7 +62,7 @@
 }
 
 .profileTitle {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 30%;
     width: 100%;
     display: flex;
@@ -73,7 +73,7 @@
 .profileContent {
     height: 70%;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     padding-left: 30px;
@@ -97,10 +97,49 @@
 .deleteAccount {
     height: 20%;
     width: 100%;
+    padding: 10px;
 }
 
 .displayHeader {
     height: 10%;
     width: 100%;
     border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+.displayBody {
+    height: 100%;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#profileForm {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#firstName, #lastName, #email, #currentPassword, #newPassword, #confirmPassword {
+    height: 1.8rem;
+    width: 100%;
+}
+
+.formDivs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#profileSaveBtn {
+    border: none;
+    height: 1.8rem;
+    background-color: orangered;
+    border-radius: 5px;
+    color: whitesmoke;
 }
