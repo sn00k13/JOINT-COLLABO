@@ -51,12 +51,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 140px;
-    margin-left:30rem;
+    margin-left:31rem;
     border-radius:10px;
 }
 #orderInput{
     all: unset;
+    /* border:1px  solid black; */
+    height:100%;
+    width:90%;
 }
 #trackButton{
     height:3.1rem;
