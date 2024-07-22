@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/profile.css">
+</head>
+<body id="profileContainer">
+    
+    <!-- Page  Header Navigation here -->
+    <div class="headerNavigation">
+        <div class="hamburger" id="hamburger">
+            <span style="font-size: 1.5rem; color: orangered;">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <h2>iTaste Restaurant Locator</h2>
+        <button type="button">Make an Order</button>
+     </div>
+
+     <!-- Hamburger Menu Items -->
+     <div class="hamburgerMenu" id="hamburgerMenu">
+        <div class="loggedIn">
+            <div class="greeting">
+                Hi Ugochukwu
+            </div>
+            <div class="profile">
+                <span>
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                Profile
+            </div>
+            <div class="myOrders">
+                <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                </span>
+                Orders
+            </div>
+            <div class="savedItems">
+                <span>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+                Saved Items
+            </div>
+            <div class="myWallet">
+                <span>
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+                My Wallet
+            </div>
+            <div class="trackOrder">
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                Track Order
+            </div>
+            <div class="logOut">
+                <span>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </span>
+                Logout
+            </div>
+        </div>
+        
+      </div>
+      <div class="hamburgerMenu2">
+        <div class="loggedOut">
+            <div class="barHeader">
+                <div style="font-size: 1.3rem; font-weight: bold;">Login</div>
+                <div class="menuClose">
+                    <div style="font-size: 0.8rem;">x</div>
+                    <div style="font-size: 0.8rem;">close</div>
+                </div>
+            </div>
+            <div class="formArea">
+                <form action="" method="post" id="loginForm">
+                    <div class="emailInput">
+                        <label for="loginEmail">Email or Phone Number</label>
+                        <input type="email" name="email" id="loginEmail">
+                    </div>
+                    <div class="passwordInput">
+                        <label for="passwordInput">Password</label>
+                        <input type="password" name="password" id="passwordInput">
+                    </div>
+                    <div class="forgotPassword">
+                        <input type="checkbox" name="" id="">
+                        <div style="font-size: 0.8rem;">Forgot password?</div>
+                    </div>
+                    <button type="submit" id="loginBtn">Login</button>
+                </form>
+            </div>
+            <div class="divide">
+                <div class="line1"></div>
+                <div class="circle">OR</div>
+                <div class="line2"></div>
+            </div>
+            <div class="socialLogin">
+                <div class="google">
+                    <span>
+                        <i class="fa-brands fa-google"></i>
+                    </span>
+                    Google
+                </div>
+                <div class="apple">
+                    <span>
+                        <i class="fa-brands fa-apple"></i>
+                    </span>
+                    Apple
+                </div>
+            </div>
+        </div>
+      </div>
+
+     <!-- Profile Information goes here -->
+      <div class="profileHeader">
+        <div class="profileNavigation">
+            <div>
+                Home
+                <span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+            </div>
+            <div>
+                My Account
+                <span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+            </div>
+            <div>
+                My profile
+            </div>
+        </div>
+        <div class="profileHeaderTitle">
+            <h1>Account Information</h1>
+        </div>
+      </div>
+      <div class="profileBody">
+        <div class="selectOptions">
+            <div class="profileOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <h4>My Profile</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Account Information</p>
+                    <p>Delivery Address</p>
+                </div>
+            </div>
+            <div class="ordersOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>My Orders</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Order History</p>
+                    <p>Pending Ratings</p>
+                </div>
+            </div>
+            <div class="walletOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>My Wallet</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Wallet</p>
+                </div>
+            </div>
+            <div class="deleteAccount">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>Delete Account</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Delete Account</p>
+                </div>
+            </div>
+        </div>
+        <div class="displaySelectedOption" id="myProfileDisplay">
+            <div class="displayHeader">
+                <h2>Orders</h2>
+            </div>
+            <div class="displayBody">
+                
+            </div>
+        </div>
+      </div>
+
+
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+
+        hamburger.addEventListener('click', () => {
+            if(hamburgerMenu.style.display === "none") {
+                hamburgerMenu.style.display = "block";
+            } else {
+                hamburgerMenu.style.display = "none";
+            }
+
+        })
+
+      </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
