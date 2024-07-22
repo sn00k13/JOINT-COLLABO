@@ -8,8 +8,8 @@
 body {
     width: 100vw;
     height: auto;
-    background-color: red;
-    background-image: linear-gradient(to bottom right, rgb(203, 247, 225), mistyrose, mintcream);
+    background-color: white;
+    /* background-image: linear-gradient(to bottom right, rgb(203, 247, 225), rgb(252, 240, 239), mintcream); */
 }
 
 .headerNavigation {
@@ -41,6 +41,259 @@ body {
 .hamburger:hover {
     cursor: pointer;
 }
+
+.hamburgerMenu {
+    height: 21rem;
+    width: 13rem;
+    opacity: 0.9;
+    position: fixed;
+    top: 4rem;
+    z-index: 1;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px grey;
+    display: none;
+}
+
+.loggedIn {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.profile {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.myOrders {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.savedItems {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.myWallet {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.trackOrder {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.logOut {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 246, 233);
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.loggedOut {
+    height: 85vh;
+    width: 24rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 4rem;
+    z-index: 1;
+    padding: 10px;
+    display: none;
+}
+
+.barHeader {
+    height: 4rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.menuClose {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+    justify-content: space-between;
+    border: 1px solid rgb(189, 189, 189);    
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.formArea {
+    height: 15rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+#loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.emailInput, .passwordInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#loginEmail {
+    height: 2.5rem;
+}
+
+#passwordInput {
+    height: 2.5rem;
+}
+
+#loginBtn {
+    border: none;
+    height: 2.5rem;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.forgotPassword {
+    display: flex;
+    width: 100%;
+    /* padding: 10px; */
+    justify-content: space-between;
+}
+
+.divide {
+    height: 3rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1 {
+    height: 1px;
+    width: 40%;
+    border: 1px solid rgb(212, 212, 212);
+}
+.circle {
+    height: 2rem;
+    width: 10%;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line2 {
+    height: 1px;
+    width: 40%;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.socialLogin {
+    height: 4rem;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.google {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid lightblue;
+}
+
+.apple {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid lightblue;
+}
+
+.profile:hover, .myOrders:hover, .savedItems:hover, .myWallet:hover, .trackOrder:hover, .logOut:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
 button[type=button] {
     border: none;
     background-color: orangered;
@@ -564,8 +817,8 @@ img {
 }
 
 .brandImage1 {
-    height: 10rem;
-    width: 20rem;
+    height: 5rem;
+    width: 10rem;
     /* border: 1px solid black; */
     padding: 10px;
     display: flex;
