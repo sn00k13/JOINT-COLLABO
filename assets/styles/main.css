@@ -8,8 +8,8 @@
 body {
     width: 100vw;
     height: auto;
-    background-color: red;
-    background-image: linear-gradient(to bottom right, rgb(203, 247, 225), mistyrose, mintcream);
+    background-color: white;
+    background-image: linear-gradient(to bottom right, rgb(203, 247, 225), rgb(252, 240, 239), mintcream);
 }
 
 .headerNavigation {
@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: white;
-    z-index: 1;
+    z-index: 999;
     opacity: 0.9;
 }
 
@@ -306,6 +306,10 @@ body {
     cursor: pointer;
     background-color: rgb(230, 230, 230);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 76b5620f7c5be984ed861ee48dd440965e2f2dc4
 button[type=button] {
     border: none;
     background-color: orangered;
@@ -450,9 +454,7 @@ h2#body {
 		transform: scale(1);
 	}
 }
-.mySlides {
-    /* display: none; */
-}
+
 
 img {
     vertical-align: middle;
@@ -717,10 +719,6 @@ img {
     width: 100%;
 }
 
-.label {
-    /* border: 1px solid black; */
-}
-
 #popularDishes {
     /* border: 1px solid black; */
     display: flex;
@@ -829,8 +827,8 @@ img {
 }
 
 .brandImage1 {
-    height: 10rem;
-    width: 20rem;
+    height: 5rem;
+    width: 10rem;
     /* border: 1px solid black; */
     padding: 10px;
     display: flex;
