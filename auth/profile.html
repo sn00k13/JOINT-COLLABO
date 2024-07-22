@@ -21,6 +21,99 @@
         <button type="button">Make an Order</button>
      </div>
 
+     <!-- Hamburger Menu Items -->
+     <div class="hamburgerMenu" id="hamburgerMenu">
+        <div class="loggedIn">
+            <div class="greeting">
+                Hi Ugochukwu
+            </div>
+            <div class="profile">
+                <span>
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                Profile
+            </div>
+            <div class="myOrders">
+                <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                </span>
+                Orders
+            </div>
+            <div class="savedItems">
+                <span>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+                Saved Items
+            </div>
+            <div class="myWallet">
+                <span>
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+                My Wallet
+            </div>
+            <div class="trackOrder">
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                Track Order
+            </div>
+            <div class="logOut">
+                <span>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </span>
+                Logout
+            </div>
+        </div>
+        
+      </div>
+      <div class="hamburgerMenu2">
+        <div class="loggedOut">
+            <div class="barHeader">
+                <div style="font-size: 1.3rem; font-weight: bold;">Login</div>
+                <div class="menuClose">
+                    <div style="font-size: 0.8rem;">x</div>
+                    <div style="font-size: 0.8rem;">close</div>
+                </div>
+            </div>
+            <div class="formArea">
+                <form action="" method="post" id="loginForm">
+                    <div class="emailInput">
+                        <label for="loginEmail">Email or Phone Number</label>
+                        <input type="email" name="email" id="loginEmail">
+                    </div>
+                    <div class="passwordInput">
+                        <label for="passwordInput">Password</label>
+                        <input type="password" name="password" id="passwordInput">
+                    </div>
+                    <div class="forgotPassword">
+                        <input type="checkbox" name="" id="">
+                        <div style="font-size: 0.8rem;">Forgot password?</div>
+                    </div>
+                    <button type="submit" id="loginBtn">Login</button>
+                </form>
+            </div>
+            <div class="divide">
+                <div class="line1"></div>
+                <div class="circle">OR</div>
+                <div class="line2"></div>
+            </div>
+            <div class="socialLogin">
+                <div class="google">
+                    <span>
+                        <i class="fa-brands fa-google"></i>
+                    </span>
+                    Google
+                </div>
+                <div class="apple">
+                    <span>
+                        <i class="fa-brands fa-apple"></i>
+                    </span>
+                    Apple
+                </div>
+            </div>
+        </div>
+      </div>
+
      <!-- Profile Information goes here -->
       <div class="profileHeader">
         <div class="profileNavigation">
@@ -112,21 +205,38 @@
                     <input type="email" name="email" id="email">
                     </div>
                     <div class="formDivs">
-                        <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email">
+                        <label for="currentPassword">Current Password</label>
+                    <input type="email" name="currentPassword" id="currentPassword">
                     </div>
                     <div class="formDivs">
-                        <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email">
+                        <label for="newPassword">New Password</label>
+                    <input type="email" name="newPassword" id="newPassword">
                     </div>
                     <div class="formDivs">
-                        <label for="confirmPassword">Email Address</label>
+                        <label for="confirmPassword">Confirm Password</label>
                     <input type="password" name="confirmPassword" id="confirmPassword">
                     </div>
+                    <button type="submit" id="profileSaveBtn">Save Changes</button>
                 </form>
             </div>
         </div>
       </div>
 
+
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+
+        hamburger.addEventListener('click', () => {
+            if(hamburgerMenu.style.display === "none") {
+                hamburgerMenu.style.display = "block";
+            } else {
+                hamburgerMenu.style.display = "none";
+            }
+
+        })
+
+      </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

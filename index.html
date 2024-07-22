@@ -25,42 +25,42 @@
             <div class="greeting">
                 Hi Ugochukwu
             </div>
-            <div class="profile">
+            <a href="/auth/profile.html" class="profile">
                 <span>
                     <i class="fa-regular fa-user"></i>
                 </span>
                 Profile
-            </div>
-            <div class="myOrders">
+            </a>
+            <a class="myOrders">
                 <span>
                     <i class="fa-regular fa-bookmark"></i>
                 </span>
                 Orders
-            </div>
-            <div class="savedItems">
+            </a>
+            <a class="savedItems">
                 <span>
                     <i class="fa-regular fa-heart"></i>
                 </span>
                 Saved Items
-            </div>
-            <div class="myWallet">
+            </a>
+            <a class="myWallet">
                 <span>
                     <i class="fa-solid fa-wallet"></i>
                 </span>
                 My Wallet
-            </div>
-            <div class="trackOrder">
+            </a>
+            <a class="trackOrder">
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
                 </span>
                 Track Order
-            </div>
-            <div class="logOut">
+            </a>
+            <a class="logOut">
                 <span>
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </span>
                 Logout
-            </div>
+            </a>
         </div>
         
       </div>
@@ -531,41 +531,7 @@
                 </div>
               </div>
 
-
-
-              <script>
-                let slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                //   let dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                //   for (i = 0; i < dots.length; i++) {
-                //     dots[i].className = dots[i].className.replace(" active", "");
-                //   }
-                  slides[slideIndex-1].style.display = "block";  
-                //   dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 2000); // Change image every 2 seconds
-                }
-
-                const hamburger = document.getElementById('hamburger');
-                const hamburgerMenu = document.getElementById('hamburgerMenu');
-
-                hamburger.addEventListener('click', () => {
-                    if(hamburgerMenu.style.display === "none") {
-                        hamburgerMenu.style.display = "block";
-                    } else {
-                        hamburgerMenu.style.display = "none";
-                    }
-
-                })
-                </script>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>              
+    <script src="assets/js/main.js"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>              
 </body>
 </html>
