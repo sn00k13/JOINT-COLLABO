@@ -451,9 +451,7 @@ h2#body {
 		transform: scale(1);
 	}
 }
-.mySlides {
-    /* display: none; */
-}
+
 
 img {
     vertical-align: middle;
@@ -716,10 +714,6 @@ img {
     /* border: 1px solid black; */
     height: 4rem;
     width: 100%;
-}
-
-.label {
-    /* border: 1px solid black; */
 }
 
 #popularDishes {
