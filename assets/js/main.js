@@ -29,3 +29,69 @@ hamburger.addEventListener('click', () => {
     }
 
 })
+
+
+const navBarMenu = document.getElementById('allMenus');
+const all = document.querySelector('.allMenu')
+const breakfast = document.querySelector('.breakfast')
+const lunch = document.querySelector('.lunch')
+const dinner = document.querySelector('.dinner')
+const vendors = document.querySelector('.vendors')
+const storeLocator = document.querySelector('.storeLocator')
+
+all.addEventListener('click', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
+breakfast.addEventListener('click', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
+lunch.addEventListener('click', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
+dinner.addEventListener('click', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
+vendors.addEventListener('click', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
+storeLocator.addEventListener('click', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
+all.addEventListener('mouseover', (e)=> {
+    if(navBarMenu.style.display === "none") {
+        navBarMenu.style.display = "block";
+    } else {
+        navBarMenu.style.display = "none";
+    }
+})
+
