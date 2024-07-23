@@ -35,7 +35,7 @@ const login = document.getElementById('loginSignUp');
 const loggedOut = document.getElementById('loggedOut');
 const closeLogin = document.getElementById('closeLogin');
 
-
+closeLogin.style.cursor = "pointer"
 login.addEventListener('click', ()=> {
     if(loggedOut.style.display === "none") {
         loggedOut.style.display = "block";
