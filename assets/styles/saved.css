@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.savedCards{
+    height:auto;
+    width:100%;
+    border:1px solid black;
+    margin-top:4rem;
+    padding-right:10px;
+    padding-left:10px;
+}
+.savedCardUp{
+    height:30rem;
+    width:100%;
+    border: 1px solid black;
+    display: flex;
+}
+.savedCardDown{
+    height:30rem;
+    width:100%;
+    border:1px solid black;
+    display: flex;
+}
+.savedCardBottom{
+     height:30rem;
+    width: 100%;
+    border:1px solid black;
+    display: flex;
+}
+.savedCardDown{
+    height:20rem;
+    width: 100%;
+    border:1px solid rgb(72, 7, 175);
+    display: flex;
+}
+.savedCard1{
+    width:25%;
+    height:20rem;
+    border:1px solid red;
+}
+.savedFavorite{
+    height:;
+}
