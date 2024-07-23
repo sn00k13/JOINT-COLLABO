@@ -306,10 +306,7 @@ body {
     cursor: pointer;
     background-color: rgb(230, 230, 230);
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 76b5620f7c5be984ed861ee48dd440965e2f2dc4
 button[type=button] {
     border: none;
     background-color: orangered;
