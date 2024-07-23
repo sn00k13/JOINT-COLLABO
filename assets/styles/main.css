@@ -396,15 +396,11 @@ h2#body {
 }
 
 .slideshow-container {
-    height: 85%;
-    width: 90%;
+    height: 100%;
+    max-width: 100%;
     /* border: 1px solid black; */
-    background-size: cover;
-    background-position: 100% 100%;
-    overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
-    object-fit: contain;
     animation: myAnim-slide 1s ease 0s 1 normal forwards;
 }
 
@@ -453,7 +449,7 @@ h2#body {
 }
 
 
-img {
+img#slideShowImage {
     vertical-align: middle;
     height: 100%;
     object-fit: contain;
