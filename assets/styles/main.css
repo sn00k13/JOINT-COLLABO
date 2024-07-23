@@ -156,14 +156,15 @@ body {
 }
 
 .loggedOut {
-    height: 85vh;
+    height: 80vh;
     width: 24rem;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     gap: 10px;
     position: fixed;
-    top: 4rem;
+    left: 75%;
+    top: 6.5rem;
     z-index: 1;
     padding: 10px;
     display: none;
@@ -307,11 +308,46 @@ body {
     background-color: rgb(230, 230, 230);
 }
 
+.topNavleft {
+    width: auto;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.loginHelp, .loginSignUp {
+    font-size: 0.9rem;
+    /* background-color: blue; */
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    color: orangered;
+}
+
+.loginHelp:hover, .loginSignUp:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+#loginHelp {
+    color: orangered;
+}
+
+#loginHelp:hover {
+    color: whitesmoke;
+}
+
 button[type=button] {
     border: none;
     background-color: orangered;
-    width: 12rem;
-    height: 2.5rem;
+    width: 8rem;
+    height: 2rem;
     color: whitesmoke;
     border-radius: 5px;
     display: flex;
@@ -448,6 +484,8 @@ h2 {
 #orderSearch {
     all: unset;
     width: 18rem;
+    font-size: 0.9rem;
+    color: rgb(186, 186, 186);
 }
 
 .searchImage {

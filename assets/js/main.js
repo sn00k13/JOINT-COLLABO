@@ -18,19 +18,39 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-const hamburger = document.getElementById('hamburger');
-const hamburgerMenu = document.getElementById('hamburgerMenu');
+// const hamburger = document.getElementById('hamburger');
+// const hamburgerMenu = document.getElementById('hamburgerMenu');
 
-hamburger.addEventListener('click', () => {
-    if(hamburgerMenu.style.display === "none") {
-        hamburgerMenu.style.display = "block";
+// hamburger.addEventListener('click', () => {
+//     if(hamburgerMenu.style.display === "none") {
+//         hamburgerMenu.style.display = "block";
+//     } else {
+//         hamburgerMenu.style.display = "none";
+//     }
+
+// })
+
+// Here to Open and close the login/signup modal
+const login = document.getElementById('loginSignUp');
+const loggedOut = document.getElementById('loggedOut');
+const closeLogin = document.getElementById('closeLogin');
+
+
+login.addEventListener('click', ()=> {
+    if(loggedOut.style.display === "none") {
+        loggedOut.style.display = "block";
     } else {
-        hamburgerMenu.style.display = "none";
+        loggedOut.style.display = "none";
     }
-
 })
 
+closeLogin.addEventListener('click', ()=> {
+    if(loggedOut.style.display === "block") {
+        loggedOut.style.display = "none";
+    } 
+})
 
+// Here to highlight Nav Bar Menu Items and display options
 const navBarMenu = document.getElementById('allMenus');
 const all = document.querySelector('.allMenu')
 const breakfast = document.querySelector('.breakfast')
@@ -87,11 +107,4 @@ storeLocator.addEventListener('click', (e)=> {
     }
 })
 
-all.addEventListener('mouseover', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
-        navBarMenu.style.display = "none";
-    }
-})
 
