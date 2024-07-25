@@ -40,17 +40,26 @@ body {
     display: flex;
     z-index: 3;
     gap: 10px;
-    color: red;
+    color: blue;
+}
+
+.LogoHamburger {
+    display: flex;
+    gap: 20px;
 }
 
 .hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     width: 3rem;
     height: 3rem;
+    text-align: center;
+    padding: 5px;
+    display: none;
+}
+
+.logoHead {
+    display: block;
 }
 
 .hamburger:hover {
@@ -482,8 +491,8 @@ h2 {
     border: 1px solid orangered;
     border-radius: 10px;
     display: flex;
-    background-color: white;
     justify-content: space-between;
+    background-color: white;
     align-items: center;
     padding-left: 10px;
 }
@@ -534,8 +543,13 @@ h2 {
     width: 45%;
     display: flex;
     border-radius: 10px;
-    /* background-color: rgb(122, 117, 115); */
     padding: 5px;
+}
+
+.androidDownload:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
 }
 
 .iOSDownload {
@@ -544,8 +558,13 @@ h2 {
     width: 45%;
     display: flex;
     border-radius: 10px;
-    /* background-color: rgb(123, 109, 103); */
     padding: 5px;
+}
+
+.iOSDownload:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
 }
 
 .downloadIcon {
@@ -652,7 +671,7 @@ h2 {
 .popularDishesHeader {
     height: 20%;
     width: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .popularDishesCards {
@@ -972,13 +991,13 @@ img {
 .menuHeader {
     height: 15%;
     width: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .menuNavigation {
     height: 15%;
     width: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .menuBody {
@@ -992,6 +1011,7 @@ img {
 
 .brands1 {
     display: flex;
+    flex-direction: column;
 }
 
 .brandImage1 {
@@ -1359,5 +1379,148 @@ img {
     font-family: "Hind", sans-serif;
     font-weight: 700;
     font-style: normal;
+  }
+
+  @media screen and (max-width: 480px) {
+    .hamburger {
+      display: block;
+    }
+
+    .logoIcon, #itaste, .loginSignUp, .loginHelp {
+        display: none;
+    }
+
+    #heroHeaderText {
+        font-size: 32px;
+    }
+
+    .ptext {
+        font-size: 16px;
+    }
+
+    .headerNavigation {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .secondNavigation {
+        display: none;
+    }
+
+    .heroSection {
+        padding: .5rem;
+        padding-top: 5rem;
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .leftHeroSection {
+        width: 100%;
+        height: 100vh;
+        gap: 15px;
+    }
+    
+    .searchNewOrder {
+        width: 90%;
+    }
+
+    #orderSearch {
+        width: 80%;
+    }
+
+    .supportSection {
+        display: none;
+    }
+
+    .downloadButtons {
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .popularDishes {
+        padding: .5rem;
+    }
+
+    .popularDishesHeader {
+        height: 3rem;
+    }
+
+    .navigationButton {
+        width: 25%;
+    }
+
+    .leftNav, .rightNav {
+        border: none;
+    }
+
+    .title{
+        font-size: 14px;
+    }
+
+    .titles{
+        font-size: 24px;
+    }
+
+    .aboutSection {
+        flex-direction: column;
+        padding: 0;
+        height: 57rem;
+        /* border: 1px solid black; */
+    }
+
+    .rightSection {
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .aboutText {
+        width: 100%;
+        height: 15%;
+    }
+
+    .aboutImage2 {
+        width: 100%;
+    }
+
+    .aboutwithImage {
+        width: 100%;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        height: auto;
+    }
+
+    .aboutwithBtn {
+        flex-direction: column;
+    }
+
+    .aboutBtn {
+        width: 100%;
+    }
+
+    .aboutImage3 {
+        width: 100%;
+    }
+
+    .table {
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftSection {
+        display: none;
+    }
+
+    .menuSection  {
+        margin-top: 0;
+    }
+
+    .menuHeader {
+        margin: auto;
+        width: auto;
+    }
   }
   

@@ -15,16 +15,18 @@
 <body>
     <!-- Page  Header Navigation here -->
      <div class="headerNavigation">
-        <!-- <div class="hamburger" id="hamburger">
-            <span style="font-size: 1.5rem; color: orangered;">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-        </div> -->
-        <div style="display: flex; align-items: center; padding: 5px; gap: 10px;">
-            <span style="font-size: 1.5rem; color: orangered;">
-                <i class="fa-solid fa-utensils"></i>
-            </span>
-            <h2>iTaste Restaurant Locator</h2>
+        <div class="LogoHamburger">
+            <div class="hamburger" id="hamburger">
+                <span style="font-size: 1.5rem; color: orangered;">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+            <div class="logoHead" style="display: flex; align-items: center; padding: 5px; gap: 10px;">
+                <span class="logoIcon" style="font-size: 1.5rem; color: orangered;">
+                    <i class="fa-solid fa-utensils"></i>
+                </span>
+                <h2 id="itaste">iTaste Restaurant Locator</h2>
+            </div>
         </div>
         <div class="topNavleft">
             <div class="loginHelp">
@@ -74,6 +76,7 @@
             <div class="dinner" id="navBarButtons">Dinner</div>
             <div class="vendors" id="navBarButtons">Restaurants</div>
             <div class="storeLocator" id="navBarButtons">Store Locator</div>
+            <div class="trackOrder" id="navBarButtons">Track an Order</div>
         </div>
      </div>
 
@@ -179,7 +182,7 @@
       <div class="heroSection">
         <div class="leftHeroSection">
             <div class="h1">
-                <h1>Taste a variety of local dishes  and around your vicinity!</h1>
+                <h1 id="heroHeaderText">Taste a variety of local dishes  and around your vicinity!</h1>
             </div>
             <div class="ptext">
                 <p>iTaste Restaurant Locator: We help you easily locate your favorite native dishes from around your area within the shortest possible time.</p>
@@ -224,18 +227,21 @@
                 </div> -->
                 
                 <div class="mySlides fade">
-                  <img src="assets/media/images/maxresdefault.jpg" id="slideShowImage">
+                  <img src="assets/media/images/pexels-mart-production-7706466.jpg" id="slideShowImage">
                 </div>
-                
                 <div class="mySlides fade">
                   <img src="assets/media/images/a-woman-eating-some-vegetables-as-part-of-her-one-meal-a-day-diet.jpg" id="slideShowImage">
                 </div>
-
                 <div class="mySlides fade">
                     <img src="assets/media/images/pexels-fox-58267-5850335.jpg" id="slideShowImage">
-                  </div>
-                
                 </div>
+                <div class="mySlides fade">
+                    <img src="assets/media/images/maxresdefault.jpg" id="slideShowImage">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/media/images/Group 1.png" id="slideShowImage">
+                </div>
+            </div>
         </div>
       </div>
       <!-- Featured dishes area -->
@@ -397,7 +403,7 @@
             <div class="rightSection">
                 <div class="aboutwithImage">
                     <div class="aboutText">
-                        <h1>Your choice at the palm of your hands</h1>
+                        <h2 class="titles">Your choice at the palm of your hands</h2>
                         <p>Giving you a variety of menu to choose from to soothe your cravings</p>
                     </div>
                     <div class="aboutImage2">
