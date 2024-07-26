@@ -1,0 +1,135 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.walletDashboard{
+    width:100%;
+    height:28.5rem;
+    /* border:1px solid black; */
+    display: flex;
+    gap:5px;
+}
+.walletPage1{
+    width:35%;
+    height:28.5rem;
+    /* border:1px  solid black; */
+    display: flex;
+    flex-direction: column;
+    border-radius:10px;
+    align-items: center;
+    background:linear-gradient(mintcream,rgb(255, 253, 252));
+}
+.walletFund{
+    height:3rem;
+    width:70%;
+    border:1px solid black;
+    padding-left:20px;
+    margin-top: 50px;
+    padding-top:15px;
+}
+.walletRequest{
+     height:3rem;
+    width:70%;
+    border:1px solid black;
+    margin-top:10px;
+    padding-left:20px;
+    padding-top:15px;
+}
+.walletPage2{
+    width:65%;
+    height:28.5rem;
+    /* border: 1px solid red; */
+    border-radius:10px;
+    background:linear-gradient(rgb(245, 243, 242),mintcream);
+}
+.walletPage2Header{
+    height:3rem;
+    width:100%;
+    /* border: 1px solid blue; */
+    background-color: rgb(189, 186, 186);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.walletHeaderAll{
+    height:2.5rem;
+    width:15%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.walletHeaderRecieved{
+     height:2.5rem;
+    width:20%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.walletHeaderSent{
+     height:2.5rem;
+    width:15%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2Body{
+    height:25.5rem;
+    width:100%;
+    /* border: 1px solid red; */
+}
+.pageBorder{
+    height:3.2rem;
+    width:100%;
+    /* border: 1px rgb(160, 11, 11); */
+}
+.page2Icon{
+    height:2.3rem;
+    width:50px;
+    border:1px solid green;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    margin-left:20px;
+    margin-top:5px;
+}
+.page2BorderContent{
+    height:3.2rem;
+    width:100%;
+     border:1px solid black;
+    display: flex;
+    justify-content: center;
+    border-top:none;
+}
+.p2BContent1{
+    height:1.25rem;
+    width:100%;
+    /* border:1px solid  blue; */
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+}
+.pbcLeft{
+    height:1.25rem;
+    width:100%;
+    /* border:1px solid green; */
+    display: flex;
+}
+.pbcRight{
+    height:1.25rem;
+    width:100%;
+    /* border:1px solid orangered; */
+    display: flex;
+}
+.p2BContent2{
+    height:1.25;
+    width:100%;
+    /* border:1px solid  blue; */
+    display: flex;
+    flex-direction: column;
+}

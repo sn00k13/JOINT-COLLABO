@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/profile.css">
+    <link rel="stylesheet" href="/assets/styles/wallet.css">
+</head>
+<body id="profileContainer">
+    
+    <!-- Page  Header Navigation here -->
+    <div class="headerNavigation">
+        <div class="hamburger" id="hamburger">
+            <span style="font-size: 1.5rem; color: orangered;">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <h2>iTaste Restaurant Locator</h2>
+        <button type="button">Make an Order</button>
+     </div>
+
+     <!-- Hamburger Menu Items -->
+     <div class="hamburgerMenu" id="hamburgerMenu">
+        <div class="loggedIn">
+            <div class="greeting">
+                Hi Ugochukwu
+            </div>
+            <div class="profile">
+                <span>
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                Profile
+            </div>
+            <div class="myOrders">
+                <span>
+                    <i class="fa-regular fa-bookmark"></i>
+                </span>
+                Orders
+            </div>
+            <div class="savedItems">
+                <span>
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+                Saved Items
+            </div>
+            <div class="myWallet">
+                <span>
+                    <i class="fa-solid fa-wallet"></i>
+                </span>
+                My Wallet
+            </div>
+            <div class="trackOrder">
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                Track Order
+            </div>
+            <div class="logOut">
+                <span>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </span>
+                Logout
+            </div>
+        </div>
+        
+      </div>
+      <div class="hamburgerMenu2">
+        <div class="loggedOut">
+            <div class="barHeader">
+                <div style="font-size: 1.3rem; font-weight: bold;">Login</div>
+                <div class="menuClose">
+                    <div style="font-size: 0.8rem;">x</div>
+                    <div style="font-size: 0.8rem;">close</div>
+                </div>
+            </div>
+            <div class="formArea">
+                <form action="" method="post" id="loginForm">
+                    <div class="emailInput">
+                        <label for="loginEmail">Email or Phone Number</label>
+                        <input type="email" name="email" id="loginEmail">
+                    </div>
+                    <div class="passwordInput">
+                        <label for="passwordInput">Password</label>
+                        <input type="password" name="password" id="passwordInput">
+                    </div>
+                    <div class="forgotPassword">
+                        <input type="checkbox" name="" id="">
+                        <div style="font-size: 0.8rem;">Forgot password?</div>
+                    </div>
+                    <button type="submit" id="loginBtn">Login</button>
+                </form>
+            </div>
+            <div class="divide">
+                <div class="line1"></div>
+                <div class="circle">OR</div>
+                <div class="line2"></div>
+            </div>
+            <div class="socialLogin">
+                <div class="google">
+                    <span>
+                        <i class="fa-brands fa-google"></i>
+                    </span>
+                    Google
+                </div>
+                <div class="apple">
+                    <span>
+                        <i class="fa-brands fa-apple"></i>
+                    </span>
+                    Apple
+                </div>
+            </div>
+        </div>
+      </div>
+
+     <!-- Profile Information goes here -->
+      <div class="profileHeader">
+        <div class="profileNavigation">
+            <div>
+                Home
+                <span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+            </div>
+            <div>
+                My Wallet
+            </div>
+        </div>
+        <div class="profileHeaderTitle">
+            <h1>My  Wallet</h1>
+        </div>
+      </div>
+      <div class="profileBody">
+        <div class="selectOptions">
+            <div class="profileOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <h4>My Profile</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Account Information</p>
+                    <p>Delivery Address</p>
+                </div>
+            </div>
+            <div class="ordersOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>My Orders</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Order History</p>
+                    <p>Pending Ratings</p>
+                </div>
+            </div>
+            <div class="walletOption">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>My Wallet</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Wallet</p>
+                </div>
+            </div>
+            <div class="deleteAccount">
+                <div class="profileTitle">
+                    <span style="color: orangered;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <h4>Delete Account</h4>
+                </div>
+                <div class="profileContent">
+                    <p>Delete Account</p>
+                </div>
+            </div>
+        </div>
+            <div class="walletDashboard">
+                <div class="walletPage1">
+                    <p>Wallet  Balance</p>
+                    <h3>89,000.00NGN</h3>
+                    <div class="walletFund">
+                        Fund My  wallet <select name="" id=""></select>
+                    </div>
+                    <div class="walletRequest">
+                        Request Payout <select name="" id=""></select>
+                    </div>
+                </div>
+                <div class="walletPage2">
+                    <div class="walletPage2Header">
+                        <div class="walletHeaderAll"> ALL</div>
+                        <div class="walletHeaderRecieved">RECIEVED</div>
+                        <div class="walletHeaderSent">SENT</div>
+                    </div>
+                    <div class="page2Body">
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                            
+                            </div>
+                                <div class="p2BContent1">
+                                    <div class="pbcLeft">
+                                        paid  in 
+                                    </div>
+                                    <div class="pbcRight">
+                                 May 10th 2024. 8:00am
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                    <div class="pbcLeft">
+                                    13,000.00NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                    13,000.NGN+
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                            
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid Out
+                                    </div>
+                                    <div class="pbcRight">
+                                        may 11th 2024. 1:00pm
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                       <div class="pbcLeft">
+                                        12,000.NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                    1,000NGN
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                            
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid  in 
+                                    </div>
+                                    <div class="pbcRight">
+                                     May 18th 2024 9:00pm
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                     <div class="pbcLeft">
+                                        20,000.00NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                    21,000.00NGN+
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                        
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid out
+                                    </div>
+                                    <div class="pbcRight">
+                                        20th May  2024  10:00am
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                     <div class="pbcLeft">
+                                        1,000.00NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                        20,000.NGN
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                            
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid  in 
+                                    </div>
+                                    <div class="pbcRight">
+                                       23rd may 2024-8.24am
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                     <div class="pbcLeft">
+                                    10,000.NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                       30,000.00NGN 
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                            
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid Out
+                                    </div>
+                                    <div class="pbcRight">
+                                    31st May 2024 5:00pm
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                     <div class="pbcLeft">
+                                        20,000.00NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                        10,000.00NGN -
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                                
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid in 
+                                    </div>
+                                    <div class="pbcRight">
+                                        june 5th 2024 7:00am
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                     <div class="pbcLeft">
+                                        80,000.00NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                        90,000.00NGN
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="pageBorder">
+                            <div class="page2BorderContent">
+                                 <div class="page2Icon">
+                                
+                            </div>
+                                <div class="p2BContent1">
+                                      <div class="pbcLeft">
+                                        Paid Out
+                                    </div>
+                                    <div class="pbcRight">
+                                        june  20th 2024  10:00am
+                                    </div>
+                                </div>
+                                 <div class="p2BContent2">
+                                     <div class="pbcLeft">
+                                        1,000.00NGN
+                                    </div>
+                                    <div class="pbcRight">
+                                        89,000.00NGN
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

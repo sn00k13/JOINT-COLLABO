@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    height:98vh;
+    width:100vw;
+    /* border: 1px solid rgb(233, 19, 19); */
+    display: flex;
+    gap:1px;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+.blackBox{
+    height: 98vh;
+    width:67%;
+    background-color: black;
+    opacity:0.7;
+}
+.cartViewPage{
+    height:98vh;
+    width: 33%;
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+.cartOverview{
+    height:4rem;
+    width:100%;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding:10px
+}
+.overViewBtn{
+    display: flex;
+    align-items:center;
+}
+ #overViewBtn{
+    height:1.5rem;
+    width: 60px;
+    background-color:whitesmoke;
+    border:#ccc;
+ }
+ .cartStandard{
+    height:4.5rem;
+    width:100%;
+    /* border: 1px solid  black; */
+    display: flex;
+    align-items: center;
+    background:linear-gradient(mintcream,rgb(253, 252, 252));
+ }
+ .cartStandardImg{
+     height:2.5rem;
+     width:13%;
+     border:1px solid black;
+     align-items: center;
+ }
+ .cartStandardLetter{
+    height:4rem;
+    width:85%;
+    /* border:1px solid lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left:10px;
+ }
+ .Btns{
+    height: 30px;
+    width:100%;
+    border:1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+    gap:3rem;
+ }
+ .bt-add{
+    height:28px;
+    width:90px;
+    /* border: 1px  solid rgb(93, 13, 197); */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+ }
+ .add1{
+    height:20px;
+    width:30px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+ }
+ .btnFavorite{
+    height:25px;
+    width: 8rem;
+ }
+ .subTotal{
+    height:5rem;
+    width:100%;
+    /* border:1px  solid  black; */
+    margin-top:180px;
+    background-color:rgb(222, 245, 234);
+    border-radius:10px;
+ }
+ .sub{
+    height:2rem;
+    width:100%;
+    /* border:1px solid black; */
+    display:flex;
+    justify-content: space-around;
+ }
+ #checkout{
+    width:80%;
+    height:2.5rem;
+    background-color:orangered;
+    border-radius:10px;
+    border: none;
+    color: whitesmoke;font-weight: 200;
+ }
+ .fterBt{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+ }

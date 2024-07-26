@@ -15,17 +15,13 @@ function showSlides() {
 }
 
 
-// const hamburger = document.getElementById('hamburger');
-// const hamburgerMenu = document.getElementById('hamburgerMenu');
+const hamburger = document.getElementById('hamburger');
+const hamburgerMenu = document.getElementById('hamburgerMenu');
 
-// hamburger.addEventListener('click', () => {
-//     if(hamburgerMenu.style.display === "none") {
-//         hamburgerMenu.style.display = "block";
-//     } else {
-//         hamburgerMenu.style.display = "none";
-//     }
+hamburger.addEventListener('mouseover', () => {
+    hamburgerMenu.style.display = "block";
 
-// })
+})
 
 // Here to Open and close the login/signup modal
 const login = document.getElementById('loginSignUp');
@@ -56,52 +52,79 @@ const dinner = document.querySelector('.dinner')
 const vendors = document.querySelector('.vendors')
 const storeLocator = document.querySelector('.storeLocator')
 
-all.addEventListener('click', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
+all.addEventListener('mouseover', (e)=> {
+    navBarMenu.style.display = "block";
+})
+
+all.addEventListener('mouseout', (e)=> {
+    if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
 })
 
-breakfast.addEventListener('click', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
+breakfast.addEventListener('mouseover', (e)=> {
+    navBarMenu.style.display = "block";
+})
+
+breakfast.addEventListener('mouseout', (e)=> {
+    if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
 })
 
-lunch.addEventListener('click', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
+lunch.addEventListener('mouseover', (e)=> {
+    navBarMenu.style.display = "block";
+})
+
+lunch.addEventListener('mouseout', (e)=> {
+    if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
 })
 
-dinner.addEventListener('click', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
+dinner.addEventListener('mouseover', (e)=> {
+    navBarMenu.style.display = "block";
+})
+
+dinner.addEventListener('mouseout', (e)=> {
+    if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
 })
 
-vendors.addEventListener('click', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
+vendors.addEventListener('mouseover', (e)=> {
+    navBarMenu.style.display = "block";
+})
+
+vendors.addEventListener('mouseout', (e)=> {
+    if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
 })
 
-storeLocator.addEventListener('click', (e)=> {
-    if(navBarMenu.style.display === "none") {
-        navBarMenu.style.display = "block";
-    } else {
+storeLocator.addEventListener('mouseover', (e)=> {
+    navBarMenu.style.display = "block";
+})
+
+storeLocator.addEventListener('mouseout', (e)=> {
+    if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
 })
+
+const cartButton = document.getElementById('cartButton');
+const containerBox = document.getElementById('containerBox')
+console.log(containerBox)
+
+cartButton.addEventListener('click', (e) => {
+    if(containerBox.style.display === "none") {
+        containerBox.style.display = "block";
+    } else {
+        containerBox.style.display = "none";
+    }
+})
+
+
+
 
 
