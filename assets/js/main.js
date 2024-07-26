@@ -14,7 +14,7 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
-
+// This displays the hamburger menu
 const hamburger = document.getElementById('hamburger');
 const hamburgerMenu = document.getElementById('hamburgerMenu');
 const hamburgerMenu2 = document.getElementById('loggedOut');
@@ -28,6 +28,14 @@ hamburger.addEventListener('click', () => {
     }
 
 })
+
+// This updates the cart number
+let cartNumber = 0;
+
+    document.getElementById('cardBtn').addEventListener('click', () => {
+        cartNumber++;
+        document.getElementById('cartItemCount').textContent = cartNumber;
+    });
 
 // Here to Open and close the login/signup modal
 const login = document.getElementById('loginSignUp');
