@@ -871,7 +871,7 @@ img {
 }
 
 .hygienicPlace {
-    width: 45%;
+    width: auto;
     height: 2.5rem;
     display: flex;
     justify-content: space-between;
