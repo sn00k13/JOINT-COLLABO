@@ -1677,12 +1677,6 @@ img {
         overflow: hidden; /* Ensures the video doesn't overflow the container */
         background-color: black; /* Background color in case the video has padding or doesn't fully cover */
     }
-
-    #cards {
-        /* padding: .5rem; */
-    }
-
-    #cardBtn {}
   }
   
   @media screen and (max-width: 320px) {
