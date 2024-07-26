@@ -20,7 +20,6 @@ const hamburgerMenu = document.getElementById('hamburgerMenu');
 
 hamburger.addEventListener('mouseover', () => {
     hamburgerMenu.style.display = "block";
-
 })
 
 // Here to Open and close the login/signup modal
