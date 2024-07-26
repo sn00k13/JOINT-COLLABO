@@ -17,9 +17,16 @@ function showSlides() {
 
 const hamburger = document.getElementById('hamburger');
 const hamburgerMenu = document.getElementById('hamburgerMenu');
+const hamburgerMenu2 = document.getElementById('loggedOut');
 
-hamburger.addEventListener('mouseover', () => {
-    hamburgerMenu.style.display = "block";
+
+hamburger.addEventListener('click', () => {
+    if(hamburgerMenu.style.display === "none") {
+        hamburgerMenu.style.display = "block";
+    } else {
+        hamburgerMenu.style.display = "none";
+    }
+
 })
 
 // Here to Open and close the login/signup modal
