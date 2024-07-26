@@ -1037,7 +1037,7 @@ img {
     align-items: center;
     height: 80%;
     width: 10%;
-    background-image: url('/assets/media/images/taylor-kiser-6RJct18G_3I-unsplash.jpg');
+    background-image: url('assets/media/images/taylor-kiser-6RJct18G_3I-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: contain;
@@ -1047,15 +1047,15 @@ img {
 }
 
 #medal {
-    background-image: url('/assets/media/images/josh-olalde-YHxr2dmKXGY-unsplash.jpg');
+    background-image: url('assets/media/images/josh-olalde-YHxr2dmKXGY-unsplash.jpg');
 }
 
 #people {
-    background-image: url('/assets/media/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
+    background-image: url('assets/media/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
 }
 
 #office {
-    background-image: url('/assets/media/images/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');
+    background-image: url('assets/media/images/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');
 }
 
 #noOpacity {
@@ -1116,7 +1116,7 @@ img {
     height: 70%;
     margin: auto;
     /* border: 1px solid black; */
-    background-image: url('/assets/media/images/egusi1.jpg');
+    background-image: url('assets/media/images/egusi1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
@@ -1219,25 +1219,25 @@ img {
     height: 100%;
     width: 16.7%;
     /* border: 1px solid black; */
-    background-image: url('/assets/media/images/asun.jpg');
+    background-image: url('assets/media/images/asun.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #box2 {
-    background-image: url('/assets/media/images/egusisoup.jpg');
+    background-image: url('assets/media/images/egusisoup.jpg');
 }
 
 #box3 {
-    background-image: url('/assets/media/images/egusi1.jpg');
+    background-image: url('assets/media/images/egusi1.jpg');
 }
 
 #box4 {
-    background-image: url('/assets/media/images/maxresdefault.jpg');
+    background-image: url('assets/media/images/maxresdefault.jpg');
 }
 
 #box5 {
-    background-image: url('/assets/media/images/yamporridge.jpg');
+    background-image: url('assets/media/images/yamporridge.jpg');
 }
 
 #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover {
