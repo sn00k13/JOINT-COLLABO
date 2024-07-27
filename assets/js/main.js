@@ -34,6 +34,7 @@ let cartNumber = 0;
 
     document.getElementById('cardBtn').addEventListener('click', () => {
         cartNumber++;
+        document.getElementById('cartItemCount').style.display = "block"
         document.getElementById('cartItemCount').textContent = cartNumber;
     });
 
@@ -55,6 +56,28 @@ closeLogin.addEventListener('click', ()=> {
     if(loggedOut.style.display === "block") {
         loggedOut.style.display = "none";
     } 
+})
+
+// Display Cart Items 
+
+const showCart =  document.getElementById('cartButton');
+const cart = document.getElementById('cartDisplay');
+const closeCart = document.getElementById('closeCart');
+// console.log(cart)
+
+closeCart.style.cursor = "pointer";
+
+// Click to display Cart Items
+
+showCart.addEventListener('click', (e) => {
+    cart.style.display = 'block';
+})
+
+// Here to close cart Display
+closeCart.addEventListener('click', (e) => {
+    if(cart.style.display === "block") {
+        cart.style.display = 'none';
+    }
 })
 
 // Here to highlight Nav Bar Menu Items and display options
@@ -123,18 +146,6 @@ storeLocator.addEventListener('mouseover', (e)=> {
 storeLocator.addEventListener('mouseout', (e)=> {
     if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
-    }
-})
-
-const cartButton = document.getElementById('cartButton');
-const containerBox = document.getElementById('containerBox')
-console.log(containerBox)
-
-cartButton.addEventListener('click', (e) => {
-    if(containerBox.style.display === "none") {
-        containerBox.style.display = "block";
-    } else {
-        containerBox.style.display = "none";
     }
 })
 
