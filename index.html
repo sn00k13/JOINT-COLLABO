@@ -14,7 +14,28 @@
 <link rel="stylesheet" href="/assets/styles/cart.css">       
 </head>
 <body>
-    <!-- Page  Header Navigation here -->
+    <!-- Display Cart Content -->
+
+    <div class="cartDisplay" id="cartDisplay">
+        <div class="cartDisplayContainer">
+            <div class="cartBlankDisplay"></div>
+            <div class="cartItemDisplay">
+                <div class="cartItemContainer">
+                    <div class="cartTitle">
+                        <h1 style="font-size: 2rem;">Cart Overview</h1>
+                        <div class="cartClose">
+                            <div style="font-size: 0.8rem;">x</div>
+                            <div style="font-size: 0.8rem;" id="closeCart">Close Cart</div>
+                        </div>
+                    </div>
+                    <div class="cartBody"></div>
+                    <div class="cartTotal"></div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div>
+            <!-- Page  Header Navigation here -->
      <div class="headerNavigation">
         <div class="LogoHamburger">
             <div class="hamburger" id="hamburger">
@@ -81,16 +102,7 @@
         </div>
      </div>
 
-     <!-- Display Cart Content -->
-
-     <div class="cartDisplay" id="cartDisplay">
-        <div class="cartClose">
-            <div style="font-size: 0.8rem;">x</div>
-            <div style="font-size: 0.8rem;" id="closeCart">Close Cart</div>
-        </div>
-        <div class="cartDisplayLeft"></div>
-        <div class="cartDisplayRight"></div>
-     </div>
+     
 
      <!-- Nav Bar display items goes here -->
       <div class="navBarDisplay" id="allMenus">
@@ -192,7 +204,7 @@
       </div>
 
      <!-- Hero section here -->
-      <div class="heroSection">
+      <div class="heroSection" id="heroSection">
         <div class="leftHeroSection">
             <div class="h1">
                 <h1 id="heroHeaderText">Taste a variety of local dishes  and around your vicinity!</h1>
@@ -662,6 +674,8 @@
                     </div>
                 </div>
               </div>
+    </div>
+
 
     <script src="assets/js/main.js"></script>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>              

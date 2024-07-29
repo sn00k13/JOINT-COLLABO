@@ -45,7 +45,7 @@ const closeLogin = document.getElementById('closeLogin');
 
 closeLogin.style.cursor = "pointer"
 login.addEventListener('click', ()=> {
-    if(loggedOut.style.display === "none") {
+    if(loggedOut.style.display == "none") {
         loggedOut.style.display = "block";
     } else {
         loggedOut.style.display = "none";
@@ -63,14 +63,17 @@ closeLogin.addEventListener('click', ()=> {
 const showCart =  document.getElementById('cartButton');
 const cart = document.getElementById('cartDisplay');
 const closeCart = document.getElementById('closeCart');
+const hero = document.getElementById('heroSection');
 // console.log(cart)
 
 closeCart.style.cursor = "pointer";
 
-// Click to display Cart Items
+// Click to display Cart Items and disable hero
 
 showCart.addEventListener('click', (e) => {
     cart.style.display = 'block';
+    hero.style.display = 'none';
+    // hero.style.scrollBehavior = 'none';
 })
 
 // Here to close cart Display
@@ -93,10 +96,12 @@ all.addEventListener('mouseover', (e)=> {
     navBarMenu.style.display = "block";
 })
 
-all.addEventListener('mouseout', (e)=> {
-    if(navBarMenu.style.display === "block") {
-        navBarMenu.style.display = "none";
-    }
+navBarMenu.addEventListener('mouseover', (e)=> {
+        navBarMenu.style.display = "block";
+})
+
+navBarMenu.addEventListener('mouseout', (e)=> {
+    navBarMenu.style.display = "none";
 })
 
 breakfast.addEventListener('mouseover', (e)=> {
