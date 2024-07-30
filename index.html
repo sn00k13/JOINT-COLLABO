@@ -22,14 +22,28 @@
             <div class="cartItemDisplay">
                 <div class="cartItemContainer">
                     <div class="cartTitle">
-                        <h1 style="font-size: 2rem;">Cart Overview</h1>
-                        <div class="cartClose">
-                            <div style="font-size: 0.8rem;">x</div>
-                            <div style="font-size: 0.8rem;" id="closeCart">Close Cart</div>
+                        <h1 style="font-size: 1.5rem;">Cart Overview</h1>
+                        <div style="display: flex; gap: .5rem;">
+                            <div class="clearCart">
+                                <div style="font-size: 0.8rem;">x</div>
+                                <div style="font-size: 0.8rem;" id="clearCart">Clear Cart</div>
+                            </div>
+                            <div class="cartClose">
+                                <div style="font-size: 0.8rem;">x</div>
+                                <div style="font-size: 0.8rem;" id="closeCart">Close Cart</div>
+                            </div>
                         </div>
                     </div>
                     <div class="cartBody"></div>
-                    <div class="cartTotal"></div>
+                    <div class="cartTotal">
+                        <!-- <div class="subTotal">
+                        </div> -->
+                        <div class="cartTotals">
+                            <p>Subtotal</p>
+                            <p>NGN9,450.00</p>
+                        </div>
+                        <button type="button" id="cartCheckout">Checkout</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +61,7 @@
                 <span class="logoIcon" style="font-size: 1.5rem; color: orangered;">
                     <i class="fa-solid fa-utensils"></i>
                 </span>
-                <h2 id="itaste">iTaste Restaurant Locator</h2>
+                <h2 id="itaste">iTaste</h2>
             </div>
         </div>
         <div class="topNavleft">
