@@ -31,10 +31,10 @@ body {
 .supportSection {
     height: auto;
     width: 10rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: sticky;
     top: 80vh;
-    left: 90%;
+    left: 89%;
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
