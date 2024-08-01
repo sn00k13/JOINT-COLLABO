@@ -44,15 +44,12 @@ const loggedOut = document.getElementById('loggedOut');
 const closeLogin = document.getElementById('closeLogin');
 
 closeLogin.style.cursor = "pointer"
-login.addEventListener('click', ()=> {
-    if(loggedOut.style.display == "none") {
-        loggedOut.style.display = "block";
-    } else {
-        loggedOut.style.display = "none";
-    }
+login.addEventListener('click', (e)=> {
+    loggedOut.style.display = "block";
 })
 
-closeLogin.addEventListener('click', ()=> {
+closeLogin.addEventListener('click', (e)=> {
+    e.preventDefault();
     if(loggedOut.style.display === "block") {
         loggedOut.style.display = "none";
     } 
@@ -152,6 +149,14 @@ storeLocator.addEventListener('mouseout', (e)=> {
     if(navBarMenu.style.display === "block") {
         navBarMenu.style.display = "none";
     }
+})
+
+// Track Order Here
+
+const trackOrder = document.querySelector('.trackOrder');
+
+trackOrder.addEventListener('click', (e) => {
+    location.href = 'track.html'
 })
 
 

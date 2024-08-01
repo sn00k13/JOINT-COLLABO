@@ -481,7 +481,14 @@ button[type=button] {
     justify-content: space-between;
     color: black;
     padding: 1rem;
-    box-shadow: 0px 5px 5px 0px #000000;
+    /* box-shadow: 0px 5px 5px 0px #cab2b2; */
+    background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .cartBody {
@@ -497,7 +504,7 @@ button[type=button] {
     flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
-    box-shadow: 0px -3px 5px 0px #000000;
+    box-shadow: 0px -3px 5px 0px #cbaaaa;
 }
 
 .cartTotals {
