@@ -44,12 +44,11 @@ const loggedOut = document.getElementById('loggedOut');
 const closeLogin = document.getElementById('closeLogin');
 
 closeLogin.style.cursor = "pointer"
-login.addEventListener('click', (e)=> {
+login.addEventListener('click', ()=> {
     loggedOut.style.display = "block";
 })
 
-closeLogin.addEventListener('click', (e)=> {
-    e.preventDefault();
+closeLogin.addEventListener('click', ()=> {
     if(loggedOut.style.display === "block") {
         loggedOut.style.display = "none";
     } 
