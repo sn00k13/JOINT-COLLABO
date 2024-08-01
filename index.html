@@ -13,7 +13,7 @@
 <link href="https://fonts.cdnfonts.com/css/playfair-display" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles/cart.css">       
 </head>
-<body>
+<body onload="pageLoad()">
     <!-- Display Cart Content -->
 
     <div class="cartDisplay" id="cartDisplay">
@@ -75,6 +75,9 @@
                 <div id="loginStatus">
                     Login/Signup
                 </div>
+                <div id="myAccount">
+                    My Account
+                </div>
                 <span>
                     <i class="fa-solid fa-angle-down"></i>
                 </span>
@@ -127,7 +130,7 @@
      <!-- Hamburger Menu Items -->
       <div class="hamburgerMenu" id="hamburgerMenu">
         <div class="loggedIn">
-            <div class="greeting">
+            <div class="greeting" id="profileName">
                 Hi Ugochukwu
             </div>
             <a href="auth/profile.html" class="profile">

@@ -158,6 +158,24 @@ trackOrder.addEventListener('click', (e) => {
     location.href = 'track.html'
 })
 
+const profile = document.getElementById("profileName");
+const validate = localStorage.getItem("entries");
+const myAccount = document.getElementById('myAccount');
+const loginStatus = document.getElementById('loginStatus');
+// console.log(validate.userName)
+
+sessionStorage.getItem('logins');
+
+function pageLoad() {
+    if (validate) {
+        loginStatus.style.display = 'none';
+        myAccount.style.display= 'block';
+        const userData = JSON.parse(validate)
+        console.log(validate.userName)
+        profile.innerHTML = "Hi " + userData.userName;
+      }
+}
+
 
 
 

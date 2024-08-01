@@ -28,6 +28,10 @@ body {
     /* opacity: 0.9; */
 }
 
+#myAccount {
+    display: none;
+}
+
 .supportSection {
     height: auto;
     width: 10rem;

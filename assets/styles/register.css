@@ -3,4 +3,72 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
 
+.logoHead {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    /* border: 1px solid black; */
+}
+
+.logoIcon {
+    font-size: 1.5rem;
+    color: orangered;
+}
+
+.displayHeader {
+    height: 10%;
+    width: 50%;
+    padding: 10px;
+}
+
+.displayBody {
+    height: 100%;
+    width: 50%;
+    /* padding: 10px; */
+}
+
+#profileForm {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#firstName, #lastName, #email, #currentPassword, #password, #confirmPassword {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.formDivs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#registerBtn {
+    border: none;
+    height: 2.5rem;
+    background-color: orangered;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 1rem;
+}

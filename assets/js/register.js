@@ -1,4 +1,4 @@
-const form = document.getElementById("login-form");
+const form = document.getElementById("profileForm");
 
 let inputFields = JSON.parse(localStorage.getItem("entries"))
 
@@ -8,19 +8,13 @@ console.log(inputFields)
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const text = {
-        user: form.user.value,
-        surname: form.surname.value,        
-        username: form.username.value,
-        password: form.password.value,
+        firstName: form.firstName.value,
+        lastName: form.lastName.value,        
         email: form.email.value,
-        gender: form.gender.value,              
-        age: form.age.value,
-        address: form.address.value,        
-    }
-
-    
+        password: form.password.value,
+        confirmPassword: form.confirmPassword.value,        
+    }    
 
     if(text.username == inputFields.username && text.email == inputFields.email) {
         
@@ -31,9 +25,7 @@ form.addEventListener("submit", (e) => {
 
   let game = arr.push(text)
 
-    console.log(arr)
-
-    
+    console.log(arr)    
 
     localStorage.setItem("entries", JSON.stringify(arr));
 
@@ -42,7 +34,7 @@ form.addEventListener("submit", (e) => {
         alert("Registration Successful")
         form.reset();
 
-        location.href = "http://127.0.0.1:5500/successful.html"
+        location.href = "login.html"
         
     } else {
         alert("Registration failed")
