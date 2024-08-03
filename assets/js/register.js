@@ -1,4 +1,5 @@
 const form = document.getElementById("profileForm");
+const loginButton = document.getElementById('registerLoginBtn');
 
 let inputFields = JSON.parse(localStorage.getItem("entries"))
 
@@ -38,13 +39,13 @@ form.addEventListener("submit", (e) => {
         
     } else {
         alert("Registration failed")
-    }
-
-
-
-        
+    }        
     console.log(text)
     
-    
-    
 })
+
+loginButton.addEventListener('click', (e)=> {
+    location.href = 'login.html'
+})
+
+

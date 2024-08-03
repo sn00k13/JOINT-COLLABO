@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 body {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 20px;
+    background-color: whitesmoke;
 }
 
 .logoHead {
@@ -35,8 +36,13 @@ body {
 
 .displayBody {
     height: 100%;
-    width: 50%;
-    /* padding: 10px; */
+    width: 35%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px #585858;
+    border-radius: 5px;
 }
 
 #profileForm {
@@ -47,8 +53,8 @@ body {
     flex-direction: column;
     gap: 15px;
     padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #firstName, #lastName, #email, #currentPassword, #password, #confirmPassword {
@@ -71,4 +77,43 @@ body {
     border-radius: 5px;
     color: whitesmoke;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+#registerLoginBtn {
+    height: 2.5rem;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: orangered;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#registerLoginBtn:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.footerText {
+    padding-left: 10px;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgb(177, 176, 176);
+}
+
+.registerLogin {
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }

@@ -112,18 +112,26 @@ const storeLocator = document.querySelector('.storeLocator')
 
 all.addEventListener('mouseover', (e)=> {
     navBarMenu.style.display = "block";
+    all.style.backgroundColor = "whitesmoke"
+    all.style.color = "black"
 });
 
 all.addEventListener('mouseout', (e)=> {
     navBarMenu.style.display = "none";
+    all.style.backgroundColor = "orangered"
+    all.style.color = "white"
 });
 
 navBarMenu.addEventListener('mouseover', (e)=> {
         navBarMenu.style.display = "block";
+        all.style.backgroundColor = "whitesmoke"
+        all.style.color = "black"
 })
 
 navBarMenu.addEventListener('mouseout', (e)=> {
     navBarMenu.style.display = "none";
+    all.style.backgroundColor = "orangered"
+    all.style.color = "white"
 })
 
 breakfast.addEventListener('mouseover', (e)=> {
