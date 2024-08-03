@@ -111,7 +111,7 @@ const vendors = document.querySelector('.vendors')
 const storeLocator = document.querySelector('.storeLocator')
 
 all.addEventListener('mouseover', (e)=> {
-    navBarMenu.style.display = "block";
+    navBarMenu.style.display = "flex";
     all.style.backgroundColor = "whitesmoke"
     all.style.color = "black"
 });
@@ -123,7 +123,7 @@ all.addEventListener('mouseout', (e)=> {
 });
 
 navBarMenu.addEventListener('mouseover', (e)=> {
-        navBarMenu.style.display = "block";
+        navBarMenu.style.display = "flex";
         all.style.backgroundColor = "whitesmoke"
         all.style.color = "black"
 })
@@ -135,83 +135,238 @@ navBarMenu.addEventListener('mouseout', (e)=> {
 })
 
 breakfast.addEventListener('mouseover', (e)=> {
-    navBarMenu1.style.display = "block";
+    navBarMenu1.style.display = "flex";
+    breakfast.style.backgroundColor = "whitesmoke"
+    breakfast.style.color = "black"
 });
 
 breakfast.addEventListener('mouseout', (e)=> {
     navBarMenu1.style.display = "none";
+    breakfast.style.backgroundColor = "orangered"
+    breakfast.style.color = "white"
 });
 
 navBarMenu1.addEventListener('mouseover', (e)=> {
-        navBarMenu1.style.display = "block";
+    navBarMenu1.style.display = "block";
+    breakfast.style.backgroundColor = "whitesmoke"
+    breakfast.style.color = "black"
 })
 
 navBarMenu1.addEventListener('mouseout', (e)=> {
     navBarMenu1.style.display = "none";
+    breakfast.style.backgroundColor = "orangered"
+    breakfast.style.color = "white"
 })
 
 lunch.addEventListener('mouseover', (e)=> {
     navBarMenu2.style.display = "block";
+    lunch.style.backgroundColor = "whitesmoke"
+    lunch.style.color = "black"
 });
 
 lunch.addEventListener('mouseout', (e)=> {
     navBarMenu2.style.display = "none";
+    lunch.style.backgroundColor = "orangered"
+    lunch.style.color = "white"
 });
 
 navBarMenu2.addEventListener('mouseover', (e)=> {
-        navBarMenu2.style.display = "block";
+    navBarMenu2.style.display = "block";
+    lunch.style.backgroundColor = "whitesmoke"
+    lunch.style.color = "black"
 })
 
 navBarMenu2.addEventListener('mouseout', (e)=> {
     navBarMenu2.style.display = "none";
+    lunch.style.backgroundColor = "orangered"
+    lunch.style.color = "white"
 })
 
 dinner.addEventListener('mouseover', (e)=> {
     navBarMenu3.style.display = "block";
+    dinner.style.backgroundColor = "whitesmoke"
+    dinner.style.color = "black"
 });
 
-dinner.addEventListener('mouseout', (e)=> {
+dinner.addEventListener('mouseout', ()=> {
     navBarMenu3.style.display = "none";
+    dinner.style.backgroundColor = "orangered"
+    dinner.style.color = "white"
 });
 
-navBarMenu3.addEventListener('mouseover', (e)=> {
-        navBarMenu3.style.display = "block";
+navBarMenu3.addEventListener('mouseover', ()=> {
+    navBarMenu3.style.display = "block";
+    dinner.style.backgroundColor = "whitesmoke"
+    dinner.style.color = "black"
 })
 
-navBarMenu3.addEventListener('mouseout', (e)=> {
+navBarMenu3.addEventListener('mouseout', ()=> {
     navBarMenu3.style.display = "none";
+    dinner.style.backgroundColor = "orangered"
+    dinner.style.color = "white"
 })
 
 vendors.addEventListener('mouseover', (e)=> {
     navBarMenu4.style.display = "block";
+    vendors.style.backgroundColor = "whitesmoke"
+    vendors.style.color = "black"
 });
 
 vendors.addEventListener('mouseout', (e)=> {
     navBarMenu4.style.display = "none";
+    vendors.style.backgroundColor = "orangered"
+    vendors.style.color = "white"
 });
 
 navBarMenu4.addEventListener('mouseover', (e)=> {
-        navBarMenu4.style.display = "block";
+    navBarMenu4.style.display = "block";
+    vendors.style.backgroundColor = "whitesmoke"
+    vendors.style.color = "black"
 })
 
 navBarMenu4.addEventListener('mouseout', (e)=> {
     navBarMenu4.style.display = "none";
+    vendors.style.backgroundColor = "orangered"
+    vendors.style.color = "white"
 })
 
 storeLocator.addEventListener('mouseover', (e)=> {
     navBarMenu5.style.display = "block";
+    storeLocator.style.backgroundColor = "whitesmoke"
+    storeLocator.style.color = "black"
 });
 
 storeLocator.addEventListener('mouseout', (e)=> {
     navBarMenu5.style.display = "none";
+    storeLocator.style.backgroundColor = "orangered"
+    storeLocator.style.color = "white"
 });
 
 navBarMenu5.addEventListener('mouseover', (e)=> {
-        navBarMenu5.style.display = "block";
+    navBarMenu5.style.display = "block";
+    storeLocator.style.backgroundColor = "whitesmoke"
+    storeLocator.style.color = "black"
 })
 
 navBarMenu5.addEventListener('mouseout', (e)=> {
     navBarMenu5.style.display = "none";
+    storeLocator.style.backgroundColor = "orangered"
+    storeLocator.style.color = "white"
+})
+
+//Highlight Menu Items in Display mode
+const navBarDisplayLeft1 = document.getElementById('navBarDisplayLeft1');
+const navBarDisplayLeft2 = document.getElementById('navBarDisplayLeft2');
+const navBarDisplayLeft3 = document.getElementById('navBarDisplayLeft3');
+const navBarDisplayLeft4 = document.getElementById('navBarDisplayLeft4');
+const navBarDisplayBreakfast = document.querySelector('.navBarDisplayBreakfast');
+const navBarDisplayLunch = document.querySelector('.navBarDisplayLunch');
+const navBarDisplayDinner = document.querySelector('.navBarDisplayDinner');
+const navBarDisplayCustomize = document.querySelector('.navBarDisplayCustomize');
+
+//Breakfast
+navBarDisplayLeft1.addEventListener('mouseover', ()=> {
+    navBarDisplayBreakfast.style.display = 'block'
+    navBarDisplayLeft1.style.backgroundColor = 'white'
+    navBarDisplayLeft1.style.color = 'orangered'
+    navBarDisplayLeft1.style.cursor = 'pointer'
+})
+
+navBarDisplayLeft1.addEventListener('mouseout', ()=> {
+    navBarDisplayBreakfast.style.display = 'none'
+    navBarDisplayLeft1.style.backgroundColor = 'transparent'
+    navBarDisplayLeft1.style.color = 'black'
+})
+
+navBarDisplayBreakfast.addEventListener('mouseover', ()=> {
+    navBarDisplayBreakfast.style.display = 'block'
+    navBarDisplayLeft1.style.backgroundColor = 'white'
+    navBarDisplayLeft1.style.color = 'orangered'
+})
+
+navBarDisplayBreakfast.addEventListener('mouseout', ()=> {
+    navBarDisplayBreakfast.style.display = 'none'
+    navBarDisplayLeft1.style.backgroundColor = 'transparent'
+    navBarDisplayLeft1.style.color = 'black'
+})
+
+//Lunch
+navBarDisplayLeft2.addEventListener('mouseover', ()=> {
+    navBarDisplayLunch.style.display = 'block'
+    navBarDisplayLeft2.style.backgroundColor = 'white'
+    navBarDisplayLeft2.style.color = 'orangered'
+    navBarDisplayLeft2.style.cursor = 'pointer'
+})
+
+navBarDisplayLeft2.addEventListener('mouseout', ()=> {
+    navBarDisplayLunch.style.display = 'none'
+    navBarDisplayLeft2.style.backgroundColor = 'transparent'
+    navBarDisplayLeft2.style.color = 'black'
+})
+
+navBarDisplayLunch.addEventListener('mouseover', ()=> {
+    navBarDisplayLunch.style.display = 'block'
+    navBarDisplayLeft2.style.backgroundColor = 'white'
+    navBarDisplayLeft2.style.color = 'orangered'
+})
+
+navBarDisplayLunch.addEventListener('mouseout', ()=> {
+    navBarDisplayLunch.style.display = 'none'
+    navBarDisplayLeft2.style.backgroundColor = 'transparent'
+    navBarDisplayLeft2.style.color = 'black'
+})
+
+//Dinner
+navBarDisplayLeft3.addEventListener('mouseover', ()=> {
+    navBarDisplayDinner.style.display = 'block'
+    navBarDisplayLeft3.style.backgroundColor = 'white'
+    navBarDisplayLeft3.style.color = 'orangered'
+    navBarDisplayLeft3.style.cursor = 'pointer'
+})
+
+navBarDisplayLeft3.addEventListener('mouseout', ()=> {
+    navBarDisplayDinner.style.display = 'none'
+    navBarDisplayLeft3.style.backgroundColor = 'transparent'
+    navBarDisplayLeft3.style.color = 'black'
+})
+
+navBarDisplayDinner.addEventListener('mouseover', ()=> {
+    navBarDisplayDinner.style.display = 'block'
+    navBarDisplayLeft3.style.backgroundColor = 'white'
+    navBarDisplayLeft3.style.color = 'orangered'
+    
+})
+
+navBarDisplayDinner.addEventListener('mouseout', ()=> {
+    navBarDisplayDinner.style.display = 'none'
+    navBarDisplayLeft3.style.backgroundColor = 'transparent'
+    navBarDisplayLeft3.style.color = 'black'
+})
+
+//Customize
+navBarDisplayLeft4.addEventListener('mouseover', ()=> {
+    navBarDisplayCustomize.style.display = 'block'
+    navBarDisplayLeft4.style.backgroundColor = 'white'
+    navBarDisplayLeft4.style.color = 'orangered'
+    navBarDisplayLeft4.style.cursor = 'pointer'
+})
+
+navBarDisplayLeft4.addEventListener('mouseout', ()=> {
+    navBarDisplayCustomize.style.display = 'none'
+    navBarDisplayLeft4.style.backgroundColor = 'transparent'
+    navBarDisplayLeft4.style.color = 'black'
+})
+
+navBarDisplayCustomize.addEventListener('mouseover', ()=> {
+    navBarDisplayCustomize.style.display = 'block'
+    navBarDisplayLeft4.style.backgroundColor = 'white'
+    navBarDisplayLeft4.style.color = 'orangered'
+})
+
+navBarDisplayCustomize.addEventListener('mouseout', ()=> {
+    navBarDisplayCustomize.style.display = 'none'
+    navBarDisplayLeft4.style.backgroundColor = 'transparent'
+    navBarDisplayLeft4.style.color = 'black'
 })
 
 // Track Order Here

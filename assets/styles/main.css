@@ -582,13 +582,66 @@ button[type=button] {
 }
 
 #allMenus, #allMenus1, #allMenus2, #allMenus3, #allMenus4, #allMenus5 {
+    display: flex;
     width: 100%;
     height: 75vh;
-    background-color: whitesmoke;
+    background-color: rgb(249, 241, 241);
     position: fixed;
     top: 6.5rem;
     z-index: 1;
     display: none;
+}
+
+
+.navBarDisplayLeft {
+    width: 20%;
+    height: 50%;
+    padding-top: 20px;
+}
+
+.navBarDisplayRight {
+    width: 80%;
+    background-color: white;
+    height: 90%;
+}
+
+#navBarDisplayLeft1, #navBarDisplayLeft2, #navBarDisplayLeft3, #navBarDisplayLeft4 {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* #navBarDisplayLeft1:hover, #navBarDisplayLeft2:hover, #navBarDisplayLeft3:hover, #navBarDisplayLeft4:hover {
+    cursor: pointer;
+    background-color: white;
+    color: orangered;
+} */
+
+.navBarDisplayBreakfast {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.navBarDisplayLunch {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.navBarDisplayDinner {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.navBarDisplayCustomize {
+    display: none;
+    width: 100%;
+    height: 100%;
 }
 
 .heroSection {
