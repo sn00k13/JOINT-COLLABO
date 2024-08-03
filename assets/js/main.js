@@ -39,7 +39,7 @@ let cartNumber = 0;
     });
 
 // Here to Open and close the login/signup modal
-const login = document.getElementById('loginSignUp');
+const login = document.getElementById('loginStatus');
 const loggedOut = document.getElementById('loggedOut');
 const closeLogin = document.getElementById('closeLogin');
 
@@ -52,6 +52,23 @@ closeLogin.addEventListener('click', ()=> {
     if(loggedOut.style.display === "block") {
         loggedOut.style.display = "none";
     } 
+})
+
+// Here to open My account modal
+
+const myAccountDisplay = document.getElementById('myAccount');
+
+myAccountDisplay.addEventListener('mouseover', ()=> {
+    hamburgerMenu.style.left = "78%";
+    hamburgerMenu.style.display = "block";
+})
+
+hamburgerMenu.addEventListener('mouseover', (e)=> {
+    hamburgerMenu.style.display = "block";
+})
+
+hamburgerMenu.addEventListener('mouseout', (e)=> {
+    hamburgerMenu.style.display = "none";
 })
 
 // Display Cart Items 
@@ -81,6 +98,11 @@ closeCart.addEventListener('click', (e) => {
 
 // Here to highlight Nav Bar Menu Items and display options
 const navBarMenu = document.getElementById('allMenus');
+const navBarMenu1 = document.getElementById('allMenus1');
+const navBarMenu2 = document.getElementById('allMenus2');
+const navBarMenu3 = document.getElementById('allMenus3');
+const navBarMenu4 = document.getElementById('allMenus4');
+const navBarMenu5 = document.getElementById('allMenus5');
 const all = document.querySelector('.allMenu')
 const breakfast = document.querySelector('.breakfast')
 const lunch = document.querySelector('.lunch')
@@ -101,52 +123,52 @@ navBarMenu.addEventListener('mouseout', (e)=> {
 })
 
 breakfast.addEventListener('mouseover', (e)=> {
-    navBarMenu.style.display = "block";
+    navBarMenu1.style.display = "block";
 })
 
 breakfast.addEventListener('mouseout', (e)=> {
-    if(navBarMenu.style.display === "block") {
-        navBarMenu.style.display = "none";
+    if(navBarMenu1.style.display === "block") {
+        navBarMenu1.style.display = "none";
     }
 })
 
 lunch.addEventListener('mouseover', (e)=> {
-    navBarMenu.style.display = "block";
+    navBarMenu2.style.display = "block";
 })
 
 lunch.addEventListener('mouseout', (e)=> {
-    if(navBarMenu.style.display === "block") {
-        navBarMenu.style.display = "none";
+    if(navBarMenu2.style.display === "block") {
+        navBarMenu2.style.display = "none";
     }
 })
 
 dinner.addEventListener('mouseover', (e)=> {
-    navBarMenu.style.display = "block";
+    navBarMenu3.style.display = "block";
 })
 
 dinner.addEventListener('mouseout', (e)=> {
-    if(navBarMenu.style.display === "block") {
-        navBarMenu.style.display = "none";
+    if(navBarMenu3.style.display === "block") {
+        navBarMenu3.style.display = "none";
     }
 })
 
 vendors.addEventListener('mouseover', (e)=> {
-    navBarMenu.style.display = "block";
+    navBarMenu4.style.display = "block";
 })
 
 vendors.addEventListener('mouseout', (e)=> {
-    if(navBarMenu.style.display === "block") {
-        navBarMenu.style.display = "none";
+    if(navBarMenu4.style.display === "block") {
+        navBarMenu4.style.display = "none";
     }
 })
 
 storeLocator.addEventListener('mouseover', (e)=> {
-    navBarMenu.style.display = "block";
+    navBarMenu5.style.display = "block";
 })
 
 storeLocator.addEventListener('mouseout', (e)=> {
-    if(navBarMenu.style.display === "block") {
-        navBarMenu.style.display = "none";
+    if(navBarMenu5.style.display === "block") {
+        navBarMenu5.style.display = "none";
     }
 })
 
@@ -158,8 +180,34 @@ trackOrder.addEventListener('click', (e) => {
     location.href = 'track.html'
 })
 
+const form = document.getElementById("loginForm");
+const check = JSON.parse(localStorage.getItem("entries")) || [];
+const profileUser = JSON.parse(sessionStorage.getItem('signedInUser'))
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const password = form.password.value;
+    const email = form.email.value;
+
+    const user = check.find(users => users.email === email && users.password === password);
+
+    if (user) {
+        // Store the signed-in user info in session storage
+        sessionStorage.setItem('signedInUser', JSON.stringify(user));
+
+
+        alert("Login successful!");
+        form.reset();
+        location.href = 'index.html'
+    } else {
+        alert("Invalid login credentials!");
+    }
+
+    })
+
+
 const profile = document.getElementById("profileName");
-const validate = localStorage.getItem("entries");
+const validate = JSON.parse(localStorage.getItem("entries")) || [];
 const myAccount = document.getElementById('myAccount');
 const loginStatus = document.getElementById('loginStatus');
 // console.log(validate.userName)
@@ -167,14 +215,30 @@ const loginStatus = document.getElementById('loginStatus');
 sessionStorage.getItem('logins');
 
 function pageLoad() {
-    if (validate) {
+
+    console.log(check)
+
+    const user = validate.find(users => users.firstName);
+    if (user) {
         loginStatus.style.display = 'none';
         myAccount.style.display= 'block';
-        const userData = JSON.parse(validate)
-        console.log(validate.userName)
-        profile.innerHTML = "Hi " + userData.userName;
+        profile.innerHTML = "Hi " + user.firstName;
+      } else {
+        loginStatus.style.display = 'block';
+        myAccount.style.display= 'none';
       }
 }
+
+// To logout session from browser
+
+const logoutProfile = document.getElementById('logoutProfile');
+
+logoutProfile.addEventListener('click', (e)=> {
+    e.preventDefault();
+    localStorage.clear();
+    sessionStorage.clear();
+    location.reload();
+})
 
 
 

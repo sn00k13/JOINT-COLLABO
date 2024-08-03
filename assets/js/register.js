@@ -16,12 +16,12 @@ form.addEventListener("submit", (e) => {
         confirmPassword: form.confirmPassword.value,        
     }    
 
-    if(text.username == inputFields.username && text.email == inputFields.email) {
+    // if(text.username == inputFields.username && text.email == inputFields.email) {
         
-        document.getElementById("errMsg").innerHTML = "Username already exists!";
+    //     document.getElementById("errMsg").innerHTML = "Username already exists!";
       
-        return
-    }
+    //     return
+    // }
 
   let game = arr.push(text)
 
