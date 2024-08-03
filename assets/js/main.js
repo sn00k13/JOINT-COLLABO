@@ -112,7 +112,11 @@ const storeLocator = document.querySelector('.storeLocator')
 
 all.addEventListener('mouseover', (e)=> {
     navBarMenu.style.display = "block";
-})
+});
+
+all.addEventListener('mouseout', (e)=> {
+    navBarMenu.style.display = "none";
+});
 
 navBarMenu.addEventListener('mouseover', (e)=> {
         navBarMenu.style.display = "block";
@@ -124,52 +128,82 @@ navBarMenu.addEventListener('mouseout', (e)=> {
 
 breakfast.addEventListener('mouseover', (e)=> {
     navBarMenu1.style.display = "block";
-})
+});
 
 breakfast.addEventListener('mouseout', (e)=> {
-    if(navBarMenu1.style.display === "block") {
-        navBarMenu1.style.display = "none";
-    }
+    navBarMenu1.style.display = "none";
+});
+
+navBarMenu1.addEventListener('mouseover', (e)=> {
+        navBarMenu1.style.display = "block";
+})
+
+navBarMenu1.addEventListener('mouseout', (e)=> {
+    navBarMenu1.style.display = "none";
 })
 
 lunch.addEventListener('mouseover', (e)=> {
     navBarMenu2.style.display = "block";
-})
+});
 
 lunch.addEventListener('mouseout', (e)=> {
-    if(navBarMenu2.style.display === "block") {
-        navBarMenu2.style.display = "none";
-    }
+    navBarMenu2.style.display = "none";
+});
+
+navBarMenu2.addEventListener('mouseover', (e)=> {
+        navBarMenu2.style.display = "block";
+})
+
+navBarMenu2.addEventListener('mouseout', (e)=> {
+    navBarMenu2.style.display = "none";
 })
 
 dinner.addEventListener('mouseover', (e)=> {
     navBarMenu3.style.display = "block";
-})
+});
 
 dinner.addEventListener('mouseout', (e)=> {
-    if(navBarMenu3.style.display === "block") {
-        navBarMenu3.style.display = "none";
-    }
+    navBarMenu3.style.display = "none";
+});
+
+navBarMenu3.addEventListener('mouseover', (e)=> {
+        navBarMenu3.style.display = "block";
+})
+
+navBarMenu3.addEventListener('mouseout', (e)=> {
+    navBarMenu3.style.display = "none";
 })
 
 vendors.addEventListener('mouseover', (e)=> {
     navBarMenu4.style.display = "block";
-})
+});
 
 vendors.addEventListener('mouseout', (e)=> {
-    if(navBarMenu4.style.display === "block") {
-        navBarMenu4.style.display = "none";
-    }
+    navBarMenu4.style.display = "none";
+});
+
+navBarMenu4.addEventListener('mouseover', (e)=> {
+        navBarMenu4.style.display = "block";
+})
+
+navBarMenu4.addEventListener('mouseout', (e)=> {
+    navBarMenu4.style.display = "none";
 })
 
 storeLocator.addEventListener('mouseover', (e)=> {
     navBarMenu5.style.display = "block";
-})
+});
 
 storeLocator.addEventListener('mouseout', (e)=> {
-    if(navBarMenu5.style.display === "block") {
-        navBarMenu5.style.display = "none";
-    }
+    navBarMenu5.style.display = "none";
+});
+
+navBarMenu5.addEventListener('mouseover', (e)=> {
+        navBarMenu5.style.display = "block";
+})
+
+navBarMenu5.addEventListener('mouseout', (e)=> {
+    navBarMenu5.style.display = "none";
 })
 
 // Track Order Here
