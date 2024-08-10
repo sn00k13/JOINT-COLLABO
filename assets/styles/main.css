@@ -624,24 +624,44 @@ button[type=button] {
     display: none;
     width: 100%;
     height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .navBarDisplayLunch {
     display: none;
     width: 100%;
     height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .navBarDisplayDinner {
     display: none;
     width: 100%;
     height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .navBarDisplayCustomize {
     display: none;
     width: 100%;
     height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.breakfastCard {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    gap: 30px;
 }
 
 .heroSection {
