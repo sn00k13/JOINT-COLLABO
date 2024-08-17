@@ -354,7 +354,7 @@ body {
     justify-content: center;
     gap: 5px;
     padding: 10px;
-    color: orangered;
+    color: rgb(16, 13, 11);
 }
 
 .loginHelp:hover, .loginSignUp:hover {
@@ -592,6 +592,16 @@ button[type=button] {
     display: none;
 }
 
+#allMenus1, #allMenus2, #allMenus3, #allMenus4, #allMenus5 {
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 130px;
+    object-fit: contain;
+    background-size: 100% 100;
+}
+
 
 .navBarDisplayLeft {
     width: 20%;
@@ -662,6 +672,77 @@ button[type=button] {
     height: auto;
     width: 100%;
     gap: 30px;
+}
+
+.card {
+    box-shadow: 5px 5px 5px 1px #f9d0ce;
+    animation: breakfastCard 2s ease 0s 1 normal forwards;
+}
+
+@keyframes breakfastCard {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.breakfastHeader {
+    height: 12%;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 5px 7px 1px #ac9997;
+}
+
+.breakfastBody {
+    height: 76%;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.breakfastFooter {
+    height: 12%;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px -5px 7px 1px #fe8e85;
 }
 
 .heroSection {
