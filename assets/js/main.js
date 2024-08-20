@@ -441,7 +441,7 @@ logoutProfile.addEventListener('click', (e)=> {
 
 function mapLoaded() {
     const googleMaps = document.getElementById('googleMaps');
-    const srcUrl = 'https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA'
+    const srcUrl = 'https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Ikenegbu+Owerri+Imo+State'
 
     if (!googleMaps.src) {
         googleMaps.src = srcUrl
