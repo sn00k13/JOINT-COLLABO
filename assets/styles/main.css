@@ -755,6 +755,18 @@ button[type=button] {
 .storeList {
     width: 50%;
     height: 100%;
+    padding: 2rem;
+}
+
+.storeSearch {
+    border: 1px solid black;
+    width: 24rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
 .googleMap {

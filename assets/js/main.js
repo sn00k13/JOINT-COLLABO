@@ -437,6 +437,18 @@ logoutProfile.addEventListener('click', (e)=> {
     location.reload();
 })
 
+//Trying to hide my google maps API key. If it works i will move this code block to a secure server and call it from there :)
+
+function mapLoaded() {
+    const googleMaps = document.getElementById('googleMaps');
+    const srcUrl = 'https://www.google.com/maps/embed/v1/place?key=AIzaSyCVEGIx1ADCSCjlK0p1fM5ufrLoarkpYrw&q=Space+Needle,Seattle+WA'
+
+    if (!googleMaps.src) {
+        googleMaps.src = srcUrl
+    } else {
+        return;
+    }
+}
 
 
 

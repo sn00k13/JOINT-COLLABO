@@ -358,17 +358,28 @@
 
       <div class="navBarDisplay" id="allMenus5">
         <div class="storeLocatorDisplay">
-            <div class="storeList"></div>
+            <div class="storeList">
+                <h2>Remember the name? Search for it!</h2>
+                <p>Let us direct you to your cravings.</p>
+                <div class="storeSearch">
+                    <input type="text" name="" id="" placeholder="Search for Restaurants around you..."
+                    style="height: 100%; width: 80%; margin-left: 5px; background-color: transparent; border: none;">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+            </div>
             <div class="googleMap">
                 <iframe
-                    width="600"
-                    height="450"
+                    onload="mapLoaded()"
+                    id="googleMaps"
+                    width="90%"
+                    height="90%"
                     style="border:0"
                     loading="lazy"
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=vvv
-                        &q=Space+Needle,Seattle+WA">
+                    >
                 </iframe>
             </div>
         </div>
